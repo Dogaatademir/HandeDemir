@@ -72,7 +72,7 @@ export default function Hizmetler() {
                 Aşağıda, her hizmetin kapsamını, kimlere uygun olduğunu ve süreç adımlarını detaylıca bulabilirsiniz.
               </p>
               <div className="hero__actions">
-                <a href="#numerology" className="btn btn--primary btn--lg">Numeroloji’yi İncele</a>
+                <a href="#numerology" className="btn btn--primary btn--lg">Numeroloji</a>
                 <a href="#bach" className="btn btn--ghost btn--lg">Bach Çiçekleri</a>
               </div>
             </div>
@@ -221,7 +221,7 @@ export default function Hizmetler() {
                     <strong>₺950</strong>
                     <span> / 60 dakika</span>
                   </div>
-                  <a className="btn btn--primary" href="/booking">Randevu Al</a>
+                  <a className="btn btn--primary" href="/booking#booking">Randevu Al</a>
                   <a className="btn btn--ghost" href="https://wa.me/905054782200" target="_blank" rel="noopener">WhatsApp</a>
                 </div>
               </div>
