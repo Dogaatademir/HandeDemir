@@ -162,7 +162,7 @@ export default function Hizmetler() {
                     <strong>₺1200</strong>
                     <span> / 90 dakika</span>
                   </div>
-                  <a className="btn btn--primary" href="/booking #booking">Randevu Al</a>
+                  <a className="btn btn--primary" href="#booking">Randevu Al</a>
                   <a className="btn btn--ghost" href="https://wa.me/905054782200" target="_blank" rel="noopener">WhatsApp</a>
                 </div>
               </div>
