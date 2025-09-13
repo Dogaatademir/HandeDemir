@@ -1,3 +1,4 @@
+// src/components/Header.tsx
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import "./Header.css";
@@ -10,7 +11,6 @@ declare global {
 
 export default function Header() {
   useEffect(() => {
-    // Feather ikonlarını yeniden yükle
     window.feather?.replace();
   }, []);
 
@@ -21,9 +21,8 @@ export default function Header() {
         <div className="nav__links">
           <a className="nav-link" href="/#home">Anasayfa</a>
           <a className="nav-link" href="/#about">Hakkımda</a>
-          <a className="nav-link" href="/#services">Hizmetler</a>
-          <a className="nav-link" href="/#testimonials">Referanslar</a>
-          <a className="nav-link" href="/#blog">Blog</a>
+          <a className="nav-link" href="/services">Hizmetler</a>
+          <a className="nav-link" href="/shop">Shop</a>
           <a className="nav-link" href="/#contact">İletişim</a>
           <Link className="btn btn--primary" to="/booking">Randevu Oluştur</Link>
         </div>
@@ -37,6 +36,7 @@ export default function Header() {
         <a href="/#home" className="mobile-menu__link">Anasayfa</a>
         <a href="/#about" className="mobile-menu__link">Hakkımda</a>
         <a href="/#services" className="mobile-menu__link">Hizmetler</a>
+        <a href="/shop" className="mobile-menu__link">Shop</a>
         <a href="/#testimonials" className="mobile-menu__link">Referanslar</a>
         <a href="/#blog" className="mobile-menu__link">Blog</a>
         <a href="/#contact" className="mobile-menu__link">İletişim</a>

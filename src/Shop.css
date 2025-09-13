@@ -1,0 +1,63 @@
+/* Shop.css — yalnızca .shop alanı içinde geçerli */
+.shop {
+  --nav-h: 64px;
+  --bg: #faf9f7;
+  --ink: #2e2e2e;
+  --primary: #2e7d32;
+  --accent: #7e22ce;
+
+  position: relative;
+  /* Sabit header için boşluk */
+  padding-top: var(--nav-h);
+  min-height: calc(100dvh - var(--nav-h));
+  background: var(--bg);
+  color: var(--ink);
+  font-family: 'Poppins', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+
+  display: grid;
+  place-items: center;
+  padding-left: 24px;
+  padding-right: 24px;
+  text-align: center;
+}
+
+
+
+/* İçerik */
+.shop .shop__wrap {
+  position: relative;
+  z-index: 1; /* degrade şeridin üstünde */
+  background: #ffffff;
+  padding: clamp(20px, 4vw, 40px);
+  border-radius: 16px;
+  box-shadow: 0 20px 45px rgba(0,0,0,.12);
+}
+
+.shop .shop__soon {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(36px, 8vw, 64px);
+  font-weight: 700;
+  margin: 0 0 10px;
+  background: linear-gradient(90deg, var(--primary), var(--accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shop-pulse 3s infinite;
+}
+
+.shop .shop__text {
+  font-size: clamp(16px, 3vw, 20px);
+  color: #6b7280;
+  margin: 0;
+  animation: shop-fadeIn 1.2s ease forwards;
+}
+
+/* Animasyonlar (izole) */
+@keyframes shop-pulse {
+  0%, 100% { opacity: 1; transform: translateZ(0) scale(1); }
+  50% { opacity: .85; transform: translateZ(0) scale(1.04); }
+}
+
+@keyframes shop-fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
